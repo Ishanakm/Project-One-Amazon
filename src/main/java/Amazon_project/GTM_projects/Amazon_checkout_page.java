@@ -17,7 +17,7 @@ public class Amazon_checkout_page
     
     public void adress_change()
     {
-    	change_button.click();
+    	change_button.click(); 
     }
      
      @FindBy(xpath="(//input[@name='submissionURL'])[2]")

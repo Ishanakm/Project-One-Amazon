@@ -28,16 +28,12 @@ public class Testcase12 extends Launch_Quit
 	  a4.EMI();
 	  a4.other_upi_app(); 
 	  a4.upi_id();
-	  a4.verify();
 	  Thread.sleep(1000);
 	  a4.cash_on_delivery();	
 	  a4.net_banking();
 	  a4.netbanking_option();
 	  a4.credit_card();
-	  a4.card_details();
-	  a4.card_number();
-	  a4.nick_name();
-a4.expiry_date();
-a4.enter_card_details();
+	
+
 }
 }

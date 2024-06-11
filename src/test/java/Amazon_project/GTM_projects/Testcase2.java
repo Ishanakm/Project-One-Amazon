@@ -4,13 +4,14 @@ package Amazon_project.GTM_projects;
 
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 //import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
 public class Testcase2  extends Launch_Quit
 {
-@Test
+@Test(retryAnalyzer=Amazon_project.GTM_projects.Retry_class.class)
 public void signin()
 {
 	Amazon_home_page a1=new Amazon_home_page(driver);

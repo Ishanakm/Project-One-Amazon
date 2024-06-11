@@ -12,7 +12,7 @@ import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public class Launch_Quit
+public class Launch_Quit extends Retry_class
 {
 	ChromeDriver driver;
 	@BeforeMethod
@@ -31,6 +31,6 @@ public class Launch_Quit
 		File source=tss.getScreenshotAs(OutputType.FILE);
 		File destination=new File("C:\\Users\\User\\eclipse-workspace\\GTM_projects\\screenshot\\one."+Math.random()+".png");
 		FileHandler.copy(source, destination);
-		//driver.close();
+		driver.close();
 	}
 }
